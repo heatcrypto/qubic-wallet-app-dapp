@@ -41,6 +41,7 @@ On success, the following object is returned.
 ```ts
 interface IssueAssetResult {
     issuedNumberOfShares: number;
+    txnID: string;
 }
 ```
 
@@ -79,6 +80,7 @@ On success, the following object is returned.
 ```ts
 interface TransferShareOwnershipAndPossessionResult {
     transferredNumberOfShares: number;
+    txnID: string;    
 }
 ```
 
@@ -118,6 +120,7 @@ On success, the following object is returned.
 ```ts
 interface AddToAskOrderResult {
     addedNumberOfShares: number;
+    txnID: string;
 }
 ```
 
@@ -157,6 +160,7 @@ On success, the following object is returned.
 ```ts
 interface AddToBidOrderResult {
     addedNumberOfShares: number;
+    txnID: string;
 }
 ```
 
@@ -196,6 +200,7 @@ On success, the following object is returned.
 ```ts
 interface RemoveFromAskOrderResult {
     removedNumberOfShares: number;
+    txnID: string;
 }
 ```
 
@@ -235,6 +240,7 @@ On success, the following object is returned.
 ```ts
 interface RemoveFromBidOrderResult {
     removedNumberOfShares: number;
+    txnID: string;
 }
 ```
 
@@ -270,6 +276,7 @@ On success, the following object is returned.
 ```ts
 interface LockResult {
     returnCode: number;
+    txnID: string;    
 }
 ```
 
@@ -304,6 +311,7 @@ On success, the following object is returned.
 ```ts
 interface UnlockResult {
     returnCode: number;
+    txnID: string;    
 }
 ```
 
@@ -353,7 +361,7 @@ On success, the following object is returned.
 
 ```ts
 interface IssueBetResult {
-    // No fields in the output struct
+    txnID: string;
 }
 ```
 
@@ -390,7 +398,7 @@ On success, the following object is returned.
 
 ```ts
 interface JoinBetResult {
-    // No fields in the output struct
+    txnID: string;
 }
 ```
 
@@ -421,7 +429,7 @@ On success, the following object is returned.
 
 ```ts
 interface CancelBetResult {
-    // No fields in the output struct
+    txnID: string;
 }
 ```
 
@@ -454,7 +462,7 @@ On success, the following object is returned.
 
 ```ts
 interface PublishResultResult {
-    // No fields in the output struct
+    txnID: string;
 }
 ```
 
@@ -489,7 +497,7 @@ On success, the following object is returned.
 
 ```ts
 interface SubmitAuthAddressResult {
-    // No fields in the output struct
+    txnID: string;
 }
 ```
 
@@ -521,7 +529,7 @@ On success, the following object is returned.
 
 ```ts
 interface ChangeAuthAddressResult {
-    // No fields in the output struct
+    txnID: string;
 }
 ```
 
@@ -557,7 +565,7 @@ On success, the following object is returned.
 
 ```ts
 interface SubmitDistributionPermilleResult {
-    // No fields in the output struct
+    txnID: string;
 }
 ```
 
@@ -593,7 +601,7 @@ On success, the following object is returned.
 
 ```ts
 interface ChangeDistributionPermilleResult {
-    // No fields in the output struct
+    txnID: string;
 }
 ```
 
@@ -625,7 +633,7 @@ On success, the following object is returned.
 
 ```ts
 interface SubmitReinvestingAddressResult {
-    // No fields in the output struct
+    txnID: string;
 }
 ```
 
@@ -657,7 +665,7 @@ On success, the following object is returned.
 
 ```ts
 interface ChangeReinvestingAddressResult {
-    // No fields in the output struct
+    txnID: string;
 }
 ```
 
@@ -689,7 +697,7 @@ On success, the following object is returned.
 
 ```ts
 interface SubmitAdminAddressResult {
-    // No fields in the output struct
+    txnID: string;
 }
 ```
 
@@ -721,7 +729,7 @@ On success, the following object is returned.
 
 ```ts
 interface ChangeAdminAddressResult {
-    // No fields in the output struct
+    txnID: string;
 }
 ```
 
@@ -753,7 +761,7 @@ On success, the following object is returned.
 
 ```ts
 interface SubmitBannedAddressResult {
-    // No fields in the output struct
+    txnID: string;
 }
 ```
 
@@ -785,7 +793,7 @@ On success, the following object is returned.
 
 ```ts
 interface SaveBannedAddressResult {
-    // No fields in the output struct
+    txnID: string;
 }
 ```
 
@@ -817,7 +825,7 @@ On success, the following object is returned.
 
 ```ts
 interface SubmitUnbannedAddressResult {
-    // No fields in the output struct
+    txnID: string;
 }
 ```
 
@@ -849,6 +857,6 @@ On success, the following object is returned.
 
 ```ts
 interface UnblockBannedAddressResult {
-    // No fields in the output struct
+    txnID: string;
 }
 ```
