@@ -97,6 +97,7 @@ export class AppComponent {
           events: ['amountChanged', 'tokenAmountChanged', 'accountsChanged'],
         },
       },
+      expiry: Math.floor(Date.now() / 1000) + 3600,
     });
     this.logConsole('Generated URL: ' + uri);
     this.connectionURL = uri;
