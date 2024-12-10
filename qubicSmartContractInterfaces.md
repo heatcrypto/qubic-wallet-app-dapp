@@ -30,6 +30,7 @@ Rpc identifier `qubic_qx_IssueAsset`
 
 | Property               | Type    | Value                            |
 |------------------------|---------|----------------------------------|
+| fromID                 | String  | User public key                  |
 | assetName              | String  | Unique asset name                |
 | numberOfShares         | String  | Total number of shares to issue  |
 | unitOfMeasurement      | Number  | Unit of measurement              |
@@ -67,6 +68,7 @@ Rpc identifier `qubic_qx_TransferShareOwnershipAndPossession`
 
 | Property              | Type    | Value                                     |
 |-----------------------|---------|-------------------------------------------|
+| fromID                | String  | User public key                           |
 | issuer                | String  | The current owner's public key            |
 | newOwnerAndPossessor  | String  | The new owner's public key                |
 | assetName             | String  | Unique asset name identifier              |
@@ -105,6 +107,7 @@ Rpc identifier `qubic_qx_AddToAskOrder`
 
 | Property         | Type    | Value                                 |
 |------------------|---------|---------------------------------------|
+| fromID           | String  | User public key                       |
 | issuer           | String  | Public key of the order issuer        |
 | assetName        | String  | Unique asset name identifier          |
 | price            | String  | Price per share in the ask order      |
@@ -143,6 +146,7 @@ Rpc identifier `qubic_qx_AddToBidOrder`
 
 | Property         | Type    | Value                                |
 |------------------|---------|--------------------------------------|
+| fromID           | String  | User public key                      |
 | issuer           | String  | Public key of the order issuer       |
 | assetName        | String  | Unique asset name identifier         |
 | price            | String  | Price per share in the bid order     |
@@ -181,6 +185,7 @@ Rpc identifier `qubic_qx_RemoveFromAskOrder`
 
 | Property         | Type    | Value                                     |
 |------------------|---------|-------------------------------------------|
+| fromID           | String  | User public key                           |
 | issuer           | String  | Public key of the order issuer            |
 | assetName        | String  | Unique asset name identifier              |
 | price            | String  | Price per share in the ask order          |
@@ -219,6 +224,7 @@ Rpc identifier `qubic_qx_RemoveFromBidOrder`
 
 | Property         | Type    | Value                                     |
 |------------------|---------|-------------------------------------------|
+| fromID           | String  | User public key                           |
 | issuer           | String  | Public key of the order issuer            |
 | assetName        | String  | Unique asset name identifier              |
 | price            | String  | Price per share in the bid order          |
